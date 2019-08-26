@@ -1,8 +1,32 @@
-<nav>
-    <ul>
-        <li><a href="#">Portada</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Nuestro Trabajo</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-</nav>
+<header>
+    <nav id="nav">
+        <div class="container-nav">
+            <div class="logo">
+                <img src="/public/img/bean-bag.png" alt="logo">
+            </div>
+            <div class="links" id="links">
+                <a href="#" id="link-inicio" class="btn-header">Portada</a>
+                <a href="#" id="link-equipo" class="btn-header">Sobre Nosotros</a>
+                <a href="#" id="link-servicio" class="btn-header">Servicios</a>
+                <a href="#" id="link-trabajo" class="btn-header">Galeria</a>
+                <a href="#" id="link-contacto" class="btn-header">Contacto</a> | 
+                <a href="/signin" class="btn-header">Iniciar Sesion</a>
+            </div>
+            <div class="icon" id="open">
+                <span>&#9776;</span>
+            </div>
+        </div>
+    </nav>
+    <div class="texts">
+        <h1>Ecopuff</h1>
+    </div>
+</header>
+<div id="message">
+    {{#if signupMessage}}
+        <div>{{signupMessage}}</div>
+    {{/if}}
+
+    {{#if signinMessage}}
+        <div>{{signinMessage}}</div>
+    {{/if}}
+</div>

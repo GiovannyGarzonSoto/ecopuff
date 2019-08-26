@@ -1,55 +1,69 @@
 <main>
-    <h1>Ecopuff</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus sequi illum fuga repellendus eaque et iste, porro sunt nihil adipisci,
-        laudantium provident voluptate distinctio! Odit molestias atque consequuntur minus!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quo illum voluptates, cum minus aspernatur non repellat quisquam sapiente modi eligendi 
-        voluptatum a aperiam voluptas doloribus atque autem ut aliquam.
-    </p>
+    <section class="team container" id="team">
+        <h3>Nuestro Trabajo</h3>
+        <p class="after">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nihil, Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ducimus quae ex mollitia harum nemo ut nulla praesentium. Possimus ipsum animi commodi natus velit nam, esse facilis itaque. Illo, adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusantium dolorem soluta repellat repudiandae ad sit, omnis recusandae eveniet, nisi consequuntur, delectus praesentium ex illum cupiditate voluptatem nemo magni veniam. quae commodi aperiam, a tenetur repellat impedit sequi accusamus cum provident suscipit! Aspernatur, velit? Minima ad placeat voluptate numquam aliquam?</p>
+    </section>
+    <section class="about" id="service">
+        <div class="container">
+            <h3 class="sub">Nuestros Servicios</h3>
+            <p class="after">Siempre mejorando para ustedes</p>
+            <div class="services">
+                <div class="box-services">
+                    <img src="/public/img/edit.png" alt="hearth" style="height: 4rem; width: 4rem">
+                    <h4>Diseños Personalizados</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="box-services">
+                    <img src="/public/img/light-bulb.png" alt="responsive" style="height: 4rem; width: 4rem">
+                    <h4>Presupuestos a la Medida</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="box-services">
+                    <img src="/public/img/forest.png" alt="efects" style="height: 4rem; width: 4rem">
+                    <h4>Materiales de Calidad</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work container" id="work">
+        <h3>Galeria</h3>
+        <p class="after">Algunos de nuestros productos</p>
+        <div class="bottons-work">
+            <ul>
+                <li class="filter active" data-name='todos'>Colecciones</li>
+            </ul>
+        </div>
+        <div class="gallery-work">
+            {{#each photos}}
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="{{imageURL}}" alt="ecopuff">
+                    </div>
+                    <div class="texts-work">
+                        <h4>{{title}}</h4>
+                    </div>
+                </div>
+            {{/each}}
+           
+        </div>
+    </section>
 </main>
-
-<section>
-    <div class="service1">
-        <img src="">
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, magni incidunt. 
-        </p>
-    </div>
-    <div class="service2">
-        <img src="">
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, magni incidunt. 
-        </p>
-    </div>
-    <div class="service3">
-        <img src="">
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, magni incidunt. 
-        </p>
-    </div>
-    <div class="service4">
-        <img src="">
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, magni incidunt. 
-        </p>
-    </div>
-</section>
-
-<article>
-
-</article>
-
-<footer>
-    <h1>Contactanos</h1>
-    <form>
-        <input type="text" placeholder="Correo">
-        <textarea rows="2"></textarea>
-    </form>
-    <div class="social">
-        <ul>
-            <li><a href="https://www.facebook.com/Ecopuff-Sustentables-Mr-323244038360487/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
-            <li><a href="https://github.com/Giovanky" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-            <li><a href="https://www.instagram.com/amorfadiccion" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-        </ul>
+<footer id="contact">
+    <div class="footer container">
+        <div class="marc logo">
+            <img src="/public/img/bean-bag.png" alt="logo">
+        </div>
+        <div class="icons">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://www.facebook.com/Ecopuff-Sustentables-Mr-323244038360487/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <p>Contactanos por nuestras redes sociales</p>
     </div>
 </footer>
+<script src="/public/js/jquery-3.4.1.js"></script>
+<script src="/public/js/app.js"></script>
+<script src="/public/js/filter.js"></script>
+</body>
+</html>
