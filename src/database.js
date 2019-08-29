@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://finaluser:user@cluster0-hovsi.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb://localhost:27017/ecopuff-db', {
     useNewUrlParser: true
 })
 .then(db =>  console.log('Base de datos conectada'))
